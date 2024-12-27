@@ -10,20 +10,19 @@
 .dado {
     width: 380px;
     height: auto;
-    margin: 50px auto 45px; /* Centraliza a div no eixo X */
+    margin: 50px 0px 45px 595px;
 }
 
 h2 {
     width: 300px;
     height: auto;
-    margin: 0 auto 20px; /* Centraliza o título no eixo X */
-    text-align: center; /* Garante que o título fique centralizado */
+    margin: 0 0 20px 680px;
 }
 
 .container {
     display: flex;
-    justify-content: center; /* Garante que os itens dentro da container fiquem centralizados */
-    gap: 10px; /* Controla o espaçamento entre os inputs */
+    gap: 10px; /* controla o espaçamento entre os inputs */
+    margin-left: 450px;
 }
 
 .value {
@@ -42,8 +41,7 @@ h2 {
 
 .containerbutton {
     display: flex;
-    justify-content: center; /* Centraliza o botão */
-    margin: 0 auto 50px; /* Centraliza e dá espaço na parte inferior */
+    margin: 0 0 50px 50px;
 }
 
 .draw {
@@ -56,7 +54,7 @@ h2 {
     border: none;
     background: red;
     box-shadow: 0px 18px 30px 0px rgba(230, 43, 2, 0.35);
-    margin: 50px auto; /* Centraliza o botão na tela */
+    margin: 50px 0 50px 600px;
     cursor: pointer;
     transition: all 0.3s;
 }
@@ -66,131 +64,131 @@ h2 {
 }
 
 .draw:hover {
-    opacity: 0.6; /* Opacidade abaixa quando o mouse passa em cima */
+    opacity: 0.6; /* opacidade abaixa quando passo o mouse em cima */
 }
 
 .draw:active {
-    opacity: 0.4; /* Opacidade abaixa quando o botão é clicado */
+    opacity: 0.4; /* opacidade abaixa quando clico em cima */
+}
+
+/* abaixo irei tirar a setinha do input number */
+/* Para navegadores baseados em Webkit (Chrome, Edge, Safari) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Para Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Para maior compatibilidade geral */
+input[type="number"] {
+    appearance: none;
 }
 
 /* Media Queries para responsividade */
-
-/* Para telas maiores que 1024px */
-@media (min-width: 1025px) {
+@media (max-width: 1400px) {
+    /* Ajustes para telas menores que 1400px */
     .dado {
-        width: 500px;
+        width: 90%;  /* Ajusta a largura para ser mais fluida */
+        margin: 50px auto 45px;  /* Centraliza a posição */
     }
 
     h2 {
-        width: 350px;
+        width: 80%;
+        margin: 0 auto 20px;  /* Centraliza a posição */
     }
 
     .container {
-        margin-left: 0;
-        justify-content: center; /* Centraliza os inputs na tela */
-    }
-
-    .value {
-        width: 80%; /* Dá mais espaço ao input em telas maiores */
-        margin: 0 auto; /* Centraliza o input */
-    }
-
-    .containerbutton {
-        margin: 0 auto;
-        justify-content: center;
+        margin-left: 20px;  /* Ajusta o alinhamento para telas menores */
     }
 
     .draw {
-        width: 300px;
-        max-width: 300px;
-        margin: 50px auto; /* Centraliza o botão */
+        margin: 50px auto;
+        width: 80%;  /* Ajusta a largura para telas menores */
+        font-size: 22px;  /* Ajusta o tamanho da fonte */
     }
 }
 
-/* Para telas de até 1024px */
 @media (max-width: 1024px) {
+    /* Ajustes para tablets e telas menores */
     .dado {
-        margin: 50px auto;
-        width: 90%;
+        width: 85%;  /* Ajusta a largura */
     }
 
     h2 {
-        margin: 0 auto 20px;
-        text-align: center;
-        width: 90%;
+        font-size: 24px;  /* Ajusta o tamanho da fonte */
     }
 
     .container {
-        margin-left: 0;
-        display: block;
-        text-align: center;
+        margin-left: 20px;  /* Ajusta o alinhamento */
     }
 
     .value {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .containerbutton {
-        margin: 0 auto;
-        justify-content: center;
+        width: 100%;  /* Ajusta a largura para 100% */
     }
 
     .draw {
-        margin: 50px auto;
-        width: 100%;
-        max-width: 270px;
+        width: 80%;  /* Ajusta a largura */
+        font-size: 20px;  /* Ajusta o tamanho da fonte */
     }
 }
 
-/* Para telas de até 768px */
 @media (max-width: 768px) {
+    /* Ajustes para telas de smartphones e menores */
     .dado {
-        margin: 50px auto;
-        width: 90%;
+        width: 95%;  /* Ajusta a largura para telas pequenas */
+        margin: 50px auto 45px;
     }
 
     h2 {
-        margin: 0 auto;
-        text-align: center;
-        width: 90%;
+        font-size: 20px;  /* Ajusta o tamanho da fonte */
+        margin: 0 auto 20px;  /* Centraliza */
     }
 
     .container {
-        margin-left: 0;
-        display: block;
-        text-align: center;
+        margin-left: 0;  /* Remove o deslocamento lateral */
+        justify-content: center;  /* Centraliza os itens */
     }
 
     .value {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .containerbutton {
-        margin: 0 auto;
-        justify-content: center;
+        width: 100%;  /* Ajusta a largura para 100% */
+        height: 45px;  /* Ajusta a altura */
     }
 
     .draw {
-        width: 100%;
-        max-width: 270px;
+        width: 90%;  /* Ajusta a largura */
+        font-size: 18px;  /* Ajusta o tamanho da fonte */
     }
 }
 
-/* Para telas de até 480px */
 @media (max-width: 480px) {
+    /* Ajustes para telas muito pequenas (como smartphones em modo retrato) */
+    .dado {
+        width: 100%;  /* Faz o dado ocupar toda a largura */
+        margin: 50px auto;
+    }
+
     h2 {
-        font-size: 18px;
+        font-size: 18px;  /* Ajusta o tamanho da fonte */
+    }
+
+    .container {
+        flex-direction: column;  /* Organiza os itens em coluna */
+        padding: 10px;  /* Ajusta o padding */
     }
 
     .value {
-        width: 100%;
-        padding: 10px;
+        width: 100%;  /* Ajusta a largura para 100% */
+        height: 45px;  /* Ajusta a altura */
     }
 
     .draw {
-        font-size: 20px;
-        padding: 10px;
+        width: 90%;  /* Ajusta a largura */
+        font-size: 16px;  /* Ajusta o tamanho da fonte */
+        height: 70px;  /* Ajusta a altura */
     }
 }
