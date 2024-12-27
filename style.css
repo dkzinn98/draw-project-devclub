@@ -7,26 +7,25 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.dado{
+.dado {
     width: 380px;
     height: auto;
     margin: 50px 0px 45px 595px;
 }
 
-h2{
+h2 {
     width: 300px;
     height: auto;
-    margin-bottom: 30px;
     margin: 0 0 20px 680px;
 }
 
-.container{
+.container {
     display: flex;
     gap: 10px; /* controla o espaçamento entre os inputs */
     margin-left: 450px;
 }
 
-.value{
+.value {
     display: inline-block;
     align-items: center;
     justify-content: flex-start;
@@ -36,12 +35,11 @@ h2{
     border-radius: 7px;
     border: 1px solid rgba(255, 255, 255, 0.20);
     background: rgba(138, 3, 3, 0.124);
-    padding: 7px 0 7px 0px;
+    padding: 7px 0;
     margin-left: 0;
-} 
+}
 
-
-.containerbutton{
+.containerbutton {
     display: flex;
     margin: 0 0 50px 50px;
 }
@@ -59,34 +57,120 @@ h2{
     margin: 50px 0 50px 600px;
     cursor: pointer;
     transition: all 0.3s;
-  }
-  
+}
+
 .draw:active {
     transform: translateY(7px); /* Faz o botão descer ao clicar */
 }
 
-.draw:hover {  /* opacidade abaixa quando passo o mouse em cima */
-    opacity: 0.6;
+.draw:hover {
+    opacity: 0.6; /* opacidade abaixa quando passo o mouse em cima */
 }
 
-.draw:active {  /* opacidade abaixa quando clico em cima */
-    opacity: 0.4;
+.draw:active {
+    opacity: 0.4; /* opacidade abaixa quando clico em cima */
 }
 
 /* abaixo irei tirar a setinha do input number */
 /* Para navegadores baseados em Webkit (Chrome, Edge, Safari) */
-    input[type="number"]::-webkit-inner-spin-button,
-    input[type="number"]::-webkit-outer-spin-button{
-        -webkit-appearance: none;
-        margin: 0;
-    }
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
 /* Para Firefox */
-    input[type="number"]{
-        -moz-appearance: textfield;
-    }
+input[type="number"] {
+    -moz-appearance: textfield;
+}
 
 /* Para maior compatibilidade geral */
-    input[type="number"]{
-        appearance: none;
+input[type="number"] {
+    appearance: none;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 1024px) {
+    .dado {
+        margin: 50px auto;
+        width: 90%;
     }
+
+    h2 {
+        margin: 0 auto 20px;
+        text-align: center;
+        width: 90%;
+    }
+
+    .container {
+        margin-left: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .value {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .containerbutton {
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .draw {
+        margin: 50px auto;
+        width: 100%;
+        max-width: 270px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dado {
+        margin: 50px auto;
+        width: 90%;
+    }
+
+    h2 {
+        margin: 0 auto;
+        text-align: center;
+        width: 90%;
+    }
+
+    .container {
+        margin-left: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .value {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .containerbutton {
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .draw {
+        width: 100%;
+        max-width: 270px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    .value {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .draw {
+        font-size: 20px;
+        padding: 10px;
+    }
+}
