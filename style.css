@@ -93,22 +93,28 @@ input[type="number"] {
 @media (max-width: 1400px) {
     /* Ajustes para telas menores que 1400px */
     .dado {
-        width: 90%;  /* Ajusta a largura para ser mais fluida */
-        margin: 50px auto 45px;  /* Centraliza a posição */
+        width: 600px; 
+        height: auto; /* Ajusta a largura para ser mais fluida */
+        margin: 30px 0 35px 360px;  /* Centraliza a posição */
     }
 
     h2 {
-        width: 80%;
-        margin: 0 auto 20px;  /* Centraliza a posição */
+        width: 390px;
+        margin: 5px 0 30px 550px;  /* Centraliza a posição */
     }
 
     .container {
         margin-left: 20px;  /* Ajusta o alinhamento para telas menores */
     }
 
+    .value {
+        width: 520px;  /* Ajusta a largura para 100% */
+        margin: 10px 0 10px 65px;
+    }
+
     .draw {
-        margin: 50px auto;
-        width: 80%;  /* Ajusta a largura para telas menores */
+        margin: 40px 0 10px 220px ;
+        width: 740px;  /* Ajusta a largura para telas menores */
         font-size: 22px;  /* Ajusta o tamanho da fonte */
     }
 }
