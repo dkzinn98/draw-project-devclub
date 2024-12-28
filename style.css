@@ -124,12 +124,12 @@ input[type="number"] {
     .dado {
         width: 400px;  /* Ajusta a largura */
         height: auto;
-        margin: 25px 0 20px 320px;
+        margin: 25px 0 20px 270px;
     }
 
     h2 {
         font-size: 27px;  /* Ajusta o tamanho da fonte */
-        margin: 10px 10px 20px 420px;
+        margin: 10px 10px 20px 380px;
     }
 
     .container {
@@ -138,12 +138,12 @@ input[type="number"] {
 
     .value {
         width: 420px;  /* Ajusta a largura para 100% */
-        margin: 10px 0 10px 34px;
+        margin: 10px 0 40px 14px;
     }
 
     .draw {
-        width: 80%;  /* Ajusta a largura */
-        font-size: 20px;  /* Ajusta o tamanho da fonte */
+        width: 450px;  /* Ajusta a largura */
+        font-size: 30px;  /* Ajusta o tamanho da fonte */
     }
 }
 
@@ -221,7 +221,7 @@ input[type="number"] {
 
     h2 {
         font-size: 16px;  /* Ajusta o tamanho da fonte para telas pequenas */
-        margin: 0 0 15px 35px;  /* Ajusta a margem */
+        margin: 0 0 28px 0;  /* Ajusta a margem */
     }
 
     .container {
@@ -233,7 +233,8 @@ input[type="number"] {
     .value {
         width: 100%;  /* Ajusta a largura para 100% */
         height: 40px;  /* Ajusta a altura para telas pequenas */
-        font-size: 14px;  /* Ajusta o tamanho da fonte */
+        font-size: 14px;
+        margin: 0 7px 0 7px;  /* Ajusta o tamanho da fonte */
     }
 
     .draw {
