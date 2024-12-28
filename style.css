@@ -116,11 +116,14 @@ input[type="number"] {
 @media (max-width: 1024px) {
     /* Ajustes para tablets e telas menores */
     .dado {
-        width: 85%;  /* Ajusta a largura */
+        width: 400px;  /* Ajusta a largura */
+        height: auto;
+        margin: 25px 0 20px 320px;
     }
 
     h2 {
-        font-size: 24px;  /* Ajusta o tamanho da fonte */
+        font-size: 27px;  /* Ajusta o tamanho da fonte */
+        margin: 10px 10px 20px 420px;
     }
 
     .container {
@@ -128,7 +131,8 @@ input[type="number"] {
     }
 
     .value {
-        width: 100%;  /* Ajusta a largura para 100% */
+        width: 420px;  /* Ajusta a largura para 100% */
+        margin: 10px 0 10px 34px;
     }
 
     .draw {
@@ -140,8 +144,8 @@ input[type="number"] {
 @media (max-width: 768px) {
     /* Ajustes para telas de smartphones e menores */
     .dado {
-        width: 95%;  /* Ajusta a largura para telas pequenas */
-        margin: 50px auto 45px;
+        width: 300px;
+        margin: 50px 0 0 135px;
     }
 
     h2 {
@@ -151,18 +155,21 @@ input[type="number"] {
     }
 
     .container {
-        margin-left: 0;  /* Remove o deslocamento lateral */
+        margin: 0 10px 0 10px;  /* Remove o deslocamento lateral */
         justify-content: center;  /* Centraliza os itens */
     }
 
     .value {
-        width: 100%;  /* Ajusta a largura para 100% */
+        width: 240px;  /* Ajusta a largura para 100% */
         height: 45px;  /* Ajusta a altura */
+        margin: 10px 0 10px 10px;
     }
 
     .draw {
-        width: 90%;  /* Ajusta a largura */
+        width: 220px;  /* Ajusta a largura */
+        height: 70px;
         font-size: 18px;  /* Ajusta o tamanho da fonte */
+        margin: 15px 0 0 105px;
     }
 }
 
@@ -170,8 +177,8 @@ input[type="number"] {
 @media (max-width: 480px) {
     /* Ajustes para telas muito pequenas (como smartphones em modo retrato) */
     .dado {
-        width: 100%;  /* Faz o dado ocupar toda a largura */
-        margin: 50px auto;
+        width: 320px;
+        margin: 50px 0 0 60px;
     }
 
     h2 {
@@ -202,8 +209,8 @@ input[type="number"] {
 @media (max-width: 390px) {
     /* Ajustes para telas até 390px */
     .dado {
-        width: 100%;  /* Faz o dado ocupar toda a largura */
-        margin: 50px auto;
+        width: 270px;
+        margin: 50px 0 0 50px;
     }
 
     h2 {
