@@ -18,9 +18,14 @@ function generateNumber(){
         return;
     }
 
-    const result = Math.floor(Math.random() * (max - min + 1)) + min;
+    if (min >= max) {
+        alert("O valor minimo não pode ser menor ou igual ao valor máximo")
 
-    alert(result);
+    }
+    else {
+        const result = Math.floor(Math.random() * (max - min + 1)) + min;
+        alert(result);
+    }
 }
 
 // Atribuindo a função ao evento de clique do botão, após o carregamento do DOM
